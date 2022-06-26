@@ -1,0 +1,14 @@
+{
+  "name": "playw-your-logo-social-media-web",
+  "version": "1.0.0",
+  "description": "Verify social media links in browser tabs and new browser windows via product Quick view ",
+  "main": "soical-media.spec.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.22.2",
+    "allure-playwright": "^2.0.0-beta.16"
+  }
+}
