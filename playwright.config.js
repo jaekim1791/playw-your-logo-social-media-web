@@ -14,8 +14,8 @@ const config = {
 
   use: {
     // launchOptions: {
-    //   slowMo: 1000,
     //   args: ["--start-maximized"],
+    // slowMo: 1000,
     // },
     headless: false,
     // browserName: "chromium",
@@ -24,6 +24,8 @@ const config = {
     // viewport: { width: 1366, height: 768 },
     trace: "retain-on-failure",
   },
+
+  // reporter: "allure-playwright",
 
   projects: [
     {
