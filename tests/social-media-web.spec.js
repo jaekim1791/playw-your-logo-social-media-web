@@ -29,8 +29,8 @@ test.describe("VALIDATE SOCIAL MEDIA LINKS", async () => {
       context.waitForEvent("page"),
       socialMediaFooter.socialM_Footer01.click(), // Opens a new tab
     ]);
-    await socialM_FooterTab01.waitForURL(socialMediaFooterLinks.socialM_FooterLink01);
-    expect(socialM_FooterTab01.url().includes(socialMediaFooterLinks.socialM_FooterLink01)).toBeTruthy();
+    await socialM_FooterTab01.waitForURL();
+    await expect(socialM_FooterTab01).toHaveURL(socialMediaFooterLinks.socialM_FooterLink01);
     console.log(socialM_FooterTab01.url());
     await socialM_FooterTab01.close();
 
@@ -39,8 +39,8 @@ test.describe("VALIDATE SOCIAL MEDIA LINKS", async () => {
       context.waitForEvent("page"),
       socialMediaFooter.socialM_Footer02.click(), // Opens a new tab
     ]);
-    await socialM_FooterTab02.waitForURL(socialMediaFooterLinks.socialM_FooterLink02);
-    expect(socialM_FooterTab02.url().includes(socialMediaFooterLinks.socialM_FooterLink02)).toBeTruthy();
+    await socialM_FooterTab02.waitForURL();
+    await expect(socialM_FooterTab02).toHaveURL(socialMediaFooterLinks.socialM_FooterLink02);
     console.log(socialM_FooterTab02.url());
     await socialM_FooterTab02.close();
 
@@ -49,8 +49,9 @@ test.describe("VALIDATE SOCIAL MEDIA LINKS", async () => {
       context.waitForEvent("page"),
       socialMediaFooter.socialM_Footer03.click(), // Opens a new tab
     ]);
-    await socialM_FooterTab03.waitForURL(socialMediaFooterLinks.socialM_FooterLink03);
-    expect(socialM_FooterTab03.url().includes(socialMediaFooterLinks.socialM_FooterLink03)).toBeTruthy();
+
+    await socialM_FooterTab03.waitForURL();
+    await expect(socialM_FooterTab03).toHaveURL(socialMediaFooterLinks.socialM_FooterLink03);
     console.log(socialM_FooterTab03.url());
     await socialM_FooterTab03.close();
 
@@ -59,8 +60,8 @@ test.describe("VALIDATE SOCIAL MEDIA LINKS", async () => {
       context.waitForEvent("page"),
       socialMediaFooter.socialM_Footer04.click(), // Opens a new tab
     ]);
-    await socialM_FooterTab04.waitForURL(socialMediaFooterLinks.socialM_FooterLink04);
-    expect(socialM_FooterTab04.url().includes(socialMediaFooterLinks.socialM_FooterLink04)).toBeTruthy();
+    await socialM_FooterTab04.waitForURL();
+    await expect(socialM_FooterTab04).toHaveURL(socialMediaFooterLinks.socialM_FooterLink04);
     console.log(socialM_FooterTab04.url());
     await socialM_FooterTab04.close();
 
@@ -73,8 +74,8 @@ test.describe("VALIDATE SOCIAL MEDIA LINKS", async () => {
       context.waitForEvent("page"),
       socialMediaIFrame.socialM_IFrame01.click(), // Opens a new tab
     ]);
-    await socialM_IFrameTab01.waitForURL(socialMediaIframeLinks.socialM_IFrameLink01);
-    expect(socialM_IFrameTab01.url().includes(socialMediaIframeLinks.socialM_IFrameLink01)).toBeTruthy();
+    await socialM_IFrameTab01.waitForURL();
+    await expect(socialM_IFrameTab01).toHaveURL(socialMediaIframeLinks.socialM_IFrameLink01);
     console.log(socialM_IFrameTab01.url());
     await socialM_IFrameTab01.close();
 
@@ -83,8 +84,8 @@ test.describe("VALIDATE SOCIAL MEDIA LINKS", async () => {
       context.waitForEvent("page"),
       socialMediaIFrame.socialM_IFrame02.click(), // Opens a new tab
     ]);
-    await socialM_IFrameTab02.waitForURL(socialMediaIframeLinks.socialM_IFrameLink02);
-    expect(socialM_IFrameTab02.url().includes(socialMediaIframeLinks.socialM_IFrameLink02)).toBeTruthy();
+    await socialM_IFrameTab02.waitForURL();
+    await expect(socialM_IFrameTab02).toHaveURL(socialMediaIframeLinks.socialM_IFrameLink02);
     console.log(socialM_IFrameTab02.url());
     await socialM_IFrameTab02.close();
 
@@ -93,8 +94,8 @@ test.describe("VALIDATE SOCIAL MEDIA LINKS", async () => {
       context.waitForEvent("page"),
       socialMediaIFrame.socialM_IFrame03.click(), // Opens a new tab
     ]);
-    await socialM_IFrameTab03.waitForURL(socialMediaIframeLinks.socialM_IFrameLink03);
-    expect(socialM_IFrameTab03.url().includes(socialMediaIframeLinks.socialM_IFrameLink03)).toBeTruthy();
+    await socialM_IFrameTab03.waitForURL();
+    await expect(socialM_IFrameTab03).toHaveURL(socialMediaIframeLinks.socialM_IFrameLink03);
     console.log(socialM_IFrameTab03.url());
     await socialM_IFrameTab03.close();
 
@@ -103,8 +104,9 @@ test.describe("VALIDATE SOCIAL MEDIA LINKS", async () => {
       context.waitForEvent("page"),
       socialMediaIFrame.socialM_IFrame04.click(), // Opens a new tab
     ]);
-    await socialM_IFrameTab04.waitForURL(socialMediaIframeLinks.socialM_IFrameLink04);
-    expect(socialM_IFrameTab04.url().includes(socialMediaIframeLinks.socialM_IFrameLink04)).toBeTruthy();
+
+    await socialM_IFrameTab04.waitForURL();
+    await expect(socialM_IFrameTab04).toHaveURL(socialMediaIframeLinks.socialM_IFrameLink04);
     console.log(socialM_IFrameTab04.url());
     await socialM_IFrameTab04.close();
   });

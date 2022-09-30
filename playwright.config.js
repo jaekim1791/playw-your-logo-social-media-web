@@ -13,13 +13,13 @@ const config = {
   fullyParallel: true,
 
   use: {
-    // launchOptions: {
-    //   args: ["--start-maximized"],
-    // slowMo: 1000,
-    // },
+    launchOptions: {
+      // args: ["--start-maximized"], // Only works on chromium
+      // slowMo: 5000,
+    },
     headless: false,
     // browserName: "chromium",
-    // browserName: "firefox", // Issues on Firefox, social-media-links.spec.js
+    // browserName: "firefox", // Issues on Firefox, Iframe resolved to hidden. Unable to continue.
     // browserName: "webkit",
     // viewport: { width: 1366, height: 768 },
     trace: "retain-on-failure",
